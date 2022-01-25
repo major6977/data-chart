@@ -28,7 +28,7 @@
     margin-bottom: 18px;
     color: white;
     font-size: 1vw;
-    background-color: black;
+    background-color: #071228;
 }
 
 h1 {
@@ -62,7 +62,7 @@ p {
     margin-right: 8px;
     grid-column: span 1;
     grid-row: span 2;
-    background-color: black;
+    background-color: #071228;
 }
 
 .titles {
@@ -78,15 +78,16 @@ p {
     font-size: 12px;
 }
 
-.numbers {
-    display: flex;
+ .numbers {
+     display: grid; 
+     /* gap: 70px;  */
+     grid-template-columns: repeat(6, 15%); 
+     position: absolute; 
     width: 100%;
-    justify-content: space-between;
     color: white;
-    position: absolute;
-    top: 40px;
-    left: 125px;
-}
+    top: 40px; 
+    left: 125px;  
+} 
 
 .days {
     position: relative;
@@ -114,7 +115,7 @@ p {
 .container-c {
     grid-column: span 1;
     grid-row: span 2;
-    background-color: black;
+    background-color: #071228;
 }
 
 .container-def {
@@ -134,18 +135,18 @@ p {
     grid-column: span 1;
     grid-row: span 2;
     margin-right: 8px;
-    background-color: black;
+    background-color: #071228;
 }
 
 .container-e {
     grid-column: span 1;
     grid-row: span 2;
     margin-right: 8px;
-    background-color: black;
+    background-color: #071228;
 }
 
 .container-f {
     grid-column: span 1;
     grid-row: span 2;
-    background-color: black;
+    background-color: #071228;
 }
