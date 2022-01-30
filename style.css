@@ -19,10 +19,8 @@
 }
 
 .container-a {
-     /* height: 8%; */
      display: flex; 
     align-items: center;
-    /* position: relative;  */
     grid-column: span 3;
     grid-row: span 1;
     margin-bottom: 18px;
@@ -40,9 +38,6 @@ p {
 }
 
 .container-bc {
-    /* height: 33%;
-    width: 100%; */
-    /* position: absolute; */
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 33%;
@@ -57,8 +52,6 @@ p {
     
     display: flex; 
     position: relative;
-     /* justify-content: center; */
-    /* align-items: center;  */
     margin-right: 8px;
     grid-column: span 1;
     grid-row: span 2;
@@ -66,11 +59,18 @@ p {
 }
 
 .titles {
-    display: flex;
-    width: 100%;
-    margin-top: 10px;
-    justify-content: space-between; 
-    
+     display: flex;
+     color: white;
+}
+.sec {
+    grid-template-areas: 
+      "sessions durations";
+
+}
+
+.durations {
+    position: relative;
+    right: 25px;
 }
 
 .titles p {
@@ -78,16 +78,33 @@ p {
     font-size: 12px;
 }
 
- .numbers {
-     display: grid; 
-     /* gap: 70px;  */
-     grid-template-columns: repeat(6, 15%); 
-     position: absolute; 
-    width: 100%;
-    color: white;
-    top: 40px; 
-    left: 125px;  
-} 
+  .numbers div {
+      display: grid;
+      
+     
+}  
+
+.numbers {
+    column-gap: 20px;
+}
+
+.tri {
+    clip-path: polygon(39% 28%, 48% 60%, 58% 29%);
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    background-color: red;
+}
+
+.number1 {
+    /* display: flex; */
+    position: relative;
+    width: 85px;
+}
+
+.goals {
+    text-align: center;
+}
 
 .days {
     position: relative;
@@ -97,9 +114,6 @@ p {
 }
 
 .days div {
-    /* justify-content: space-between; */
-    /* display: flex;
-    align-items: center; */
     position: absolute;
     font-size: 12px;
     top: 64%;
@@ -119,16 +133,12 @@ p {
 }
 
 .container-def {
-    /* height: 37%;
-    width: 100%; */
-    /* position: absolute; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 37%;
     margin: 0 8px;
     grid-column: span 3;
     grid-row: span 1;
-    /* background-color: green; */
 }
 
 .container-d {
