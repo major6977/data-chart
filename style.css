@@ -88,11 +88,18 @@ p {
     column-gap: 20px;
 }
 
+.sessions {
+    margin: 15px 20px 10px 0;
+}
+
 .tri {
-    clip-path: polygon(39% 28%, 48% 60%, 58% 29%);
-    position: absolute;
-    top: 0;
-    display: inline-block;
+    clip-path: polygon(46% 0, 43% 11%, 51% 11%);
+    margin-left: 10px; 
+    top: 25px; 
+    width: 80px;
+    height: 70px;
+    /* position: relative;    */
+    display: inline-block; 
     background-color: red;
 }
 
