@@ -43,34 +43,74 @@ p {
 
 .cont-a {
     grid-area: cont-a;
+    text-align: left;
 }
 
 .title-padding {
+    
     padding-top: 10px;
+    width: 150px;
+    
 }
 
-.title-padding :nth-child(1) {
-    padding-bottom: 25px;
+.title-padding p {
+    justify-content: right;
+    
 }
+.title-padding, :nth-child(2) {
+/* position: relative;
+right: 30px; */
+text-align: right;
+}
+
+ .title-padding :nth-child(1) {
+    padding-bottom: 20px;
+    text-align: center;
+} 
 
 .title-padding :nth-child(2) {
     padding-bottom: 25px;
 }
 
 .title-padding :nth-child(3) {
-    padding-bottom: 25px;
+     padding-bottom: 25px; 
+   
 }
+
+/* .title-padding :nth-child(4) {
+    position: relative;
+    top: 30px; 
+}  */
 
 .symbols :nth-child(1) {
     padding-bottom: 12px;
 }
 
 .symbols :nth-child(2) {
-    padding-bottom: 40px;
+    position: relative;
+    top: 10px;
 }
 
 .symbols :nth-child(3) {
-    padding-bottom: 38px;
+    position: relative;
+    padding-bottom: 35px;
+    top: 1px;
+
+}
+
+.symbols :nth-child(4) {
+    position: relative;
+    top: -5px;
+} 
+
+.special-asd :nth-child(3) {
+    position: relative;
+    top: -20px;
+}
+
+.special-asd :nth-child(4) {
+    position: relative;
+    top: -38px;
 }
 
 
@@ -82,7 +122,7 @@ p {
 }
 
 .days div {
-    padding: 55px 0 0 20px;
+    padding: 53px 0 0 20px;
 }
 
 .days div p {
@@ -94,11 +134,16 @@ p {
     display: flex;
 }
 
+.sessions .symbols {
+    position: relative;
+    right: 1px;
+}
+
 .symbols {
 
     position: relative;
     width: 30px;
-    margin-top: 22px;
+    margin-top: 10px;
     /*top: 30px;
     right: 55px;
     height: 70px;*/
@@ -109,7 +154,8 @@ p {
 }
 
 .symbols div {
-   /*margin-bottom: 2px;*/
+   height: 50px;
+
 }
 
 
@@ -123,13 +169,18 @@ p {
          right: 65px;
          margin-top: 5px;*/
          
-        height: 45px;
+        height: 30px;
         background-color: #20aa20;
 }
 
 .nu {
     grid-area: nu;
     display: flex;
+}
+
+.nu .symbols {
+    position: relative;
+    right: 1px;
 }
 
 .br {
