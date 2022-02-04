@@ -54,33 +54,43 @@ p {
 }
 
 .title-padding p {
-    justify-content: right;
+    justify-content: left; 
+    font-size: small;
     
 }
+
+.sessions .title-padding div {
+    position: relative;
+    top: 7px;
+    right: 8px;
+}
+
+
 .title-padding, :nth-child(2) {
 /* position: relative;
 right: 30px; */
 text-align: right;
+padding-bottom: 25px;
 }
 
  .title-padding :nth-child(1) {
     padding-bottom: 20px;
-    text-align: center;
+    text-align: right;
 } 
 
-.title-padding :nth-child(2) {
+/* .title-padding :nth-child(2) {
     padding-bottom: 25px;
-}
+} */
 
 .title-padding :nth-child(3) {
-     padding-bottom: 25px; 
+     padding-bottom: 27px; 
    
 }
 
-/* .title-padding :nth-child(4) {
+ .title-padding :nth-child(4) {
     position: relative;
-    top: 30px; 
-}  */
+    top: 20px; 
+}  
 
 .symbols :nth-child(1) {
     padding-bottom: 12px;
@@ -100,8 +110,8 @@ text-align: right;
 
 .symbols :nth-child(4) {
     position: relative;
-    top: -5px;
-} 
+    top: -2px;
+}  
 
 .special-asd :nth-child(3) {
     position: relative;
@@ -117,7 +127,7 @@ text-align: right;
 
 .days {
     grid-area: days;
-    font-size: .7em;
+    font-size: .8em;
     border-left: 9px solid #5D6576;
 }
 
@@ -127,6 +137,8 @@ text-align: right;
 
 .days div p {
     padding-bottom: 30px;
+    text-align: left;
+    font-size: small;
 }
 
 .sessions {
@@ -136,17 +148,15 @@ text-align: right;
 
 .sessions .symbols {
     position: relative;
-    right: 1px;
+    right: 5px;
 }
 
 .symbols {
 
     position: relative;
     width: 30px;
-    margin-top: 10px;
-    /*top: 30px;
-    right: 55px;
-    height: 70px;*/
+    margin-top: 15px;
+    
 }
 
 .symbols p {
@@ -180,7 +190,14 @@ text-align: right;
 
 .nu .symbols {
     position: relative;
-    right: 1px;
+    right: 15px;
+
+}
+
+.nu .title-padding div {
+    position: relative;
+    right: 20px;
+    top: 8px;
 }
 
 .br {
@@ -188,10 +205,62 @@ text-align: right;
     display: flex;
 }
 
+.br .title-padding div {
+    position: relative;
+    top: 10px;
+    right: 21px;
+}
+
+.br .symbols {
+    top: 1px;
+    right: 17px;
+}
+
+.br .symbols :nth-child(3) {
+    position: relative;
+    top: 2px;
+}
+.br .symbols :nth-child(4) {
+    position: relative;
+    top: -2px;
+}
+
+
+
 .asd {
     display: flex;
     grid-area: asd;
 }
+
+.asd .special-asd :nth-child(2) { 
+    margin-top: 8px;
+}
+
+.asd .title-padding div :nth-child(4) {
+    position: relative;
+    bottom: 30px;
+}
+
+.asd .symbols div :nth-child(2) {
+    position: relative;
+    top: 1px;
+}
+.asd .symbols div :nth-child(4) {
+    position: relative;
+    top: 10px;
+}
+
+.asd .title-padding .sec {
+    position: relative;
+    right: 40px;
+}
+
+.asd .symbols {
+    position: relative;
+    right: 35px;
+}
+
+    
 
 .sec {
     grid-area: sec;
@@ -206,8 +275,46 @@ text-align: right;
     grid-area: g1c;
 }
 
+.g1c .title-padding div {
+    position: relative;
+    right: 25px;
+    top: 10px;
+}
+
+.g1c .symbols .tri {
+    position: relative; 
+        right: 20px;
+}
+
+.g1c .title-padding div :nth-child(2){
+    position: relative;
+    top: 35px;
+}
+
+.g1c .symbols :nth-child(3) {
+    position: relative;
+    top: 4px;
+}
+
+.g1c .symbols .tri :nth-child(4) {
+    position: relative;
+    top: 4px;
+}
+
+
 .g2c {
     grid-area: g2c;
+}
+
+.g2c .title-padding div {
+    position: relative;
+    right: 25px;
+    top: 10px;
+}
+
+.g2c .symbols .tri {
+    position: relative; 
+        right: 20px;
 }
 
 .container-b {
