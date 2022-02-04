@@ -15,9 +15,10 @@
     display: grid;
     grid-template-areas:
     'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a'
-    'days sessions tri nu br asd g1c g2c container-c'
-    'days sessions tri nu br asd g1c g2c container-c'
-    'days sessions tri nu br asd g1c g2c container-c';
+    'days sessions tri nu br asd g1c g2c cont-c'
+    'days sessions tri nu br asd g1c g2c cont-c'
+    'days sessions tri nu br asd g1c g2c cont-c'
+    'cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-f';
     border-top: 9px solid #5D6576;
     color: white;
     background-color: #071228;
@@ -244,6 +245,7 @@ padding-bottom: 25px;
 .asd .symbols div :nth-child(2) {
     position: relative;
     top: 1px;
+    transform: rotateY(180deg);
 }
 .asd .symbols div :nth-child(4) {
     position: relative;
@@ -327,6 +329,22 @@ padding-bottom: 25px;
     background-color: #071228;
 }
 
-.container-c {
-    grid-area: container-c;
+.cont-c {
+    grid-area: cont-c;
+    background-color: aqua;
+    }
+
+    .cont-d {
+        grid-area: cont-d;
+        background-color: bisque;
+    }
+
+    .cont-e {
+        grid-area: cont-e;
+        background-color: crimson;
+    }
+
+    .cont-f {
+        grid-area: cont-f;
+        background-color: coral;
     }
