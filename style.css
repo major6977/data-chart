@@ -11,13 +11,26 @@
     border-right: 9px solid #5D6576;  */
 }
 
-.main-container {
+/* .main-container {
     display: grid;
     grid-template-areas:
     'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a'
     'days sessions tri nu br asd g1c g2c cont-c'
     'days sessions tri nu br asd g1c g2c cont-c'
     'days sessions tri nu br asd g1c g2c cont-c'
+    'cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-f';
+    border-top: 9px solid #5D6576;
+    color: white;
+    background-color: #071228;
+} */
+
+.main-container {
+    display: grid;
+    grid-template-areas:
+    'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a'
+    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
+    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
+    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
     'cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-f';
     border-top: 9px solid #5D6576;
     color: white;
@@ -245,7 +258,7 @@ padding-bottom: 25px;
 .asd .symbols div :nth-child(2) {
     position: relative;
     top: 1px;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 .asd .symbols div :nth-child(4) {
     position: relative;
@@ -296,6 +309,7 @@ padding-bottom: 25px;
 .g1c .symbols :nth-child(3) {
     position: relative;
     top: 4px;
+    transform: rotateY(180deg);
 }
 
 .g1c .symbols .tri :nth-child(4) {
