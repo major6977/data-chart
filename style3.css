@@ -225,6 +225,9 @@ body {
 .cont-d  {
     grid-area: cont-d;
     background-color: palegreen;
+    position: relative;
+    width: 300px;
+    height: 200px;
 }
 .cont-e {
     grid-area: cont-e;
@@ -239,6 +242,7 @@ body {
  /* position: absolute;    */
 grid-area: cont-def;
 display: flex;
+flex-direction: row;
 background-color: green;
 top: 500px;
 }
