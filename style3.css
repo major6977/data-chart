@@ -9,26 +9,32 @@ body {
 }
 .full-wrap {
     background-color: #071228;
-
+    /* position: relative; */
+    max-width: 1200px;
+    display: grid;
+    color: white;
+    grid-template-areas: 
+    'cont-a cont-a cont-a'
+    'cont-bc cont-bc cont-bc' 
+    'cont-def cont-def cont-def';
 }
 
-.main-container {
-    display: grid;
-    grid-template-areas: 
-    'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a   cont-a cont-a cont-a cont-a'
-    'days sessions symbols1 nu symbols2 br symbols3 asd sec symbols4 g1c symbols5 g2c symbols6 cont-c'
-    'days sessions symbols1 nu symbols2 br symbols3 asd sec symbols4 g1c symbols5 g2c symbols6 cont-c'
-    'days sessions symbols1 nu symbols2 br symbols3 asd sec symbols4 g1c symbols5 g2c symbols6 cont-c'
-    'cont-d cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-e cont-e cont-e cont-e cont-e cont-f';  
-    height: 310px;
+.cont-bc {
+    display: flex; 
+    /* position: absolute; */
+    top: 70px;
+    height: 250px;
+    /* width: 1200px; */
+    border-right: 9px solid #5D6576;
      border-top: 9px solid #5D6576;  
     color: white;
-    background-color: #071228;
+    background-color: red;
 
 }
 
 .cont-a {
     grid-area: cont-a;
+    border-top: 9px solid #5D6576;
     border-bottom: 15px solid #5D6576;
 }
 
@@ -37,6 +43,13 @@ body {
     font-size: 1.5rem;
 }
 
+.cont-b {
+    flex-grow: 2;
+    display: flex;
+    height: 100%;
+    width: 70%;
+    grid-area: cont-b;
+}
 
 .days {
     grid-area: days;
@@ -196,7 +209,19 @@ body {
 
 .bc-border {
     border: 9px solid #5d6576;
+
 }
+
+.cont-c {
+    grid-area: cont-c;
+    flex-grow: 1;
+    border-left: 9px solid #5D6576;
+    /* border-right: 9px solid #5D6576; */
+    /* width: 30%; */
+    /* height: 100%; */
+    font-size: x-small;
+}
+
 .cont-d  {
     grid-area: cont-d;
     background-color: palegreen;
@@ -208,6 +233,14 @@ body {
 .cont-f {
     grid-area: cont-f;
     background-color: royalblue;
+}
+
+.cont-def {
+ /* position: absolute;    */
+grid-area: cont-def;
+display: flex;
+background-color: green;
+top: 500px;
 }
 
 
