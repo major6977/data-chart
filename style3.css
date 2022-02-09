@@ -232,10 +232,17 @@ body {
 .cont-e {
     grid-area: cont-e;
     background-color: peru;
+    position: relative;
+    width: 300px;
+    height: 200px;
+
 }
 .cont-f {
     grid-area: cont-f;
     background-color: royalblue;
+    position: relative;
+    width: 300px;
+    height: 200px;
 }
 
 .cont-def {
