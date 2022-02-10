@@ -36,6 +36,7 @@ body {
     grid-area: cont-a;
     border-top: 9px solid #5D6576;
     border-bottom: 15px solid #5D6576;
+    
 }
 
 .cont-a h1 {
@@ -226,14 +227,15 @@ body {
     grid-area: cont-d;
     background-color: palegreen;
     position: relative;
-    width: 300px;
+    border-left: 9px solid #5D6576;
+    width: 400px;
     height: 200px;
 }
 .cont-e {
     grid-area: cont-e;
     background-color: peru;
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 200px;
 
 }
@@ -241,7 +243,7 @@ body {
     grid-area: cont-f;
     background-color: royalblue;
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 200px;
 }
 
