@@ -6,58 +6,30 @@
 }
 
 .full-wrap {
-    border-bottom: 150px solid #5D6576;
-    /* border-left: 9px solid #5D6576;
-    border-right: 9px solid #5D6576;  */
-}
-
-/* .main-container {
     display: grid;
-    grid-template-areas:
-    'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a'
-    'days sessions tri nu br asd g1c g2c cont-c'
-    'days sessions tri nu br asd g1c g2c cont-c'
-    'days sessions tri nu br asd g1c g2c cont-c'
-    'cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-f';
-    border-top: 9px solid #5D6576;
+    background-color: #070707;
     color: white;
-    background-color: #071228;
-} */
-
-.main-container {
-    display: grid;
-    grid-template-areas:
-    'cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a cont-a'
-    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
-    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
-    'days sessions tri nu tri br tri asd tri g1c tri g2c tri cont-c'
-    'cont-d cont-d cont-d cont-d cont-d cont-e cont-e cont-e cont-f';
-    border-top: 9px solid #5D6576;
-    color: white;
-    background-color: #071228;
+    margin: 50px auto;
+    grid-template-areas: 
+    'cont-a cont-a cont-a'
+     'cont-b cont-b cont-c'
+     'cont-d cont-e cont-f';
 }
 
 .cont-a {
-    align-items: center;
+    grid-area: cont-a;
+    border-top: 9px solid #5D6576;
     border-bottom: 18px solid #5D6576;
-    color: white;
-    font-size: 1vw;
-    background-color: #071228;
 }
 
-h1 {
-    margin-left: 20px;
-    padding: 10px 0;
+h1 { 
+    padding: 10px 0 10px 20px;
+    font-size: 1.5rem;
 }
 
 p {
     /* color: white; */
      padding-bottom: 10px; 
-}
-
-.cont-a {
-    grid-area: cont-a;
-    text-align: left;
 }
 
 .title-padding {
@@ -334,17 +306,14 @@ padding-bottom: 25px;
 }
 
 .container-b {
-   
-    /* display: flex;
-    position: relative;
-    margin-right: 8px;
-    grid-column: span 1;
-    grid-row: span 2; */
-    background-color: #071228;
+     display: flex;
+     grid-area: cont-b;
 }
 
 .cont-c {
     grid-area: cont-c;
+    border-left: 9px solid #5D6576;
+    font-size: x-small;
     background-color: aqua;
     }
 
