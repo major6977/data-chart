@@ -8,28 +8,13 @@ body {
     font-family: sans-serif;
 }
 .full-wrap {
-    background-color: #071228;
-    /* position: relative; */
-    max-width: 1200px;
     display: grid;
+    background-color: #071228;
     color: white;
     grid-template-areas: 
     'cont-a cont-a cont-a'
-    'cont-bc cont-bc cont-bc' 
-    'cont-def cont-def cont-def';
-}
-
-.cont-bc {
-    display: flex; 
-    /* position: absolute; */
-    top: 70px;
-    height: 250px;
-    /* width: 1200px; */
-    border-right: 9px solid #5D6576;
-     border-top: 9px solid #5D6576;  
-    color: white;
-    background-color: red;
-
+    'cont-b cont-b cont-c' 
+    'cont-d cont-e cont-f';
 }
 
 .cont-a {
@@ -45,11 +30,8 @@ body {
 }
 
 .cont-b {
-    flex-grow: 2;
     display: flex;
-    height: 100%;
-    width: 70%;
-    grid-area: cont-b;
+    grid-area: cont-b;  
 }
 
 .days {
@@ -57,15 +39,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: small;
+    font-size: x-small;
     border-left: 9px solid #5d6576;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;   
 }
 
 .days p {
-    padding-left: 11px;
+    padding-left: 22px;
 }
 
 .days :nth-child(1) {
@@ -84,7 +64,7 @@ body {
 }
  .title-padding p {
      position: relative;    
-     left: 50px;
+     left: 60px;
     padding: 10px 0 20px 0;
     font-size: x-small;
     
@@ -95,6 +75,8 @@ body {
     height: 122px;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    left: 50px;
 }
 
 .numbers div {
@@ -106,7 +88,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    right: 17px;
+    left: 43px;
     margin-top: 10px;
     height: 172px;
 }
@@ -123,20 +105,20 @@ body {
 }
 
 
-.symbols4 {
+.symbols4 div {
     grid-area: symbols4;
     position: relative;
-    right: 92px;
-}
-.symbols5 {
+    right: 37px;
+} 
+.symbols5 div {
     grid-area: symbols5;
     position: relative;
-    right: 120px;
+    right: 55px;
 }
-.symbols6 {
+.symbols6 div {
     grid-area: symbols6;
     position: relative;
-    right: 115px;
+    right: 50px;
 }
 
 
@@ -145,11 +127,12 @@ body {
 }
 
 .sec {
+    grid-area: sec;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    right: 40px;
+    left: 10px;
     margin-top: 43px;
     height: 120px;
     
@@ -181,79 +164,49 @@ body {
     grid-area: asd;
 }
 
-.asd .title-padding .numbers {
+.asd .title-padding .numbers div {
     position: relative;
     right: 45px;
-}
-
-.sec {
-    grid-area: sec;
 }
 
 .g1c {
      grid-area: g1c;
      position: relative;
-     right: 85px;
+     right: 30px;
 }
 
-.special-nums1 {
+.special-nums1 div {
     position: relative;
-    right: 18px;
+    right: 25px;
 }
 
 .g2c {
     grid-area: g2c;
     position: relative;
-    right: 100px; 
+    right: 50px; 
 }
-
-
-.bc-border {
-    border: 9px solid #5d6576;
-
-}
-
 .cont-c {
     grid-area: cont-c;
-    flex-grow: 1;
     border-left: 9px solid #5D6576;
-    /* border-right: 9px solid #5D6576; */
-    /* width: 30%; */
-    /* height: 100%; */
+     border-right: 9px solid #5D6576; 
     font-size: x-small;
 }
 
 .cont-d  {
     grid-area: cont-d;
     background-color: palegreen;
-    position: relative;
     border-left: 9px solid #5D6576;
-    width: 400px;
-    height: 200px;
 }
 .cont-e {
     grid-area: cont-e;
     background-color: peru;
-    position: relative;
-    width: 400px;
-    height: 200px;
-
 }
+
 .cont-f {
     grid-area: cont-f;
     background-color: royalblue;
-    position: relative;
-    width: 400px;
-    height: 200px;
 }
 
-.cont-def {
- /* position: absolute;    */
-grid-area: cont-def;
-display: flex;
-justify-content: space-between;
-background-color: green;
-top: 500px;
-}
+
 
 
