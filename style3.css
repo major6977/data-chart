@@ -188,10 +188,13 @@ body {
 .cont-c {
     grid-area: cont-c;
     border-left: 9px solid #5D6576;
-     border-right: 9px solid #5D6576; 
+     border-right: 9px solid #5D6576;
     font-size: x-small;
 }
 
+.cont-c-title h2 {
+    font-size: x-small;
+}
 .cont-d  {
     grid-area: cont-d;
     background-color: palegreen;
