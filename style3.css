@@ -8,6 +8,15 @@
     font-size: small;
 }
 
+.days{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 10px;
+    bottom: 18px;
+}
+
 body {
     font-family: sans-serif;
 }
@@ -15,6 +24,21 @@ body {
     background-color: #071228;
     color: white;
     
+}
+
+.tri {
+    clip-path: polygon(44% 0, 61% 29%, 29% 29%);
+    /*clip-path: polygon(46% 0, 63% 31%, 31% 31%);*/
+    /*clip-path: polygon(50% 0%, 46% 36%, 53% 36%);*/
+    /* grid-area: symbols;
+     /*position: relative; */
+     /* top: 20px;
+     right: 65px;
+     margin-top: 5px;*/ 
+    height: 30px;
+    width: 30px;
+    margin-top:5px;
+    background-color: #20aa20;
 }
 
 #cont-bc {
@@ -31,12 +55,52 @@ body {
 
 .cont-b {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
+
+#border1 {
+position: absolute;
+border-top: 1px solid #5D6576;
+left: 115px;
+width: 82%;
+top: 85px;
+opacity: .5;
+}
+#border2 {
+position: absolute;
+border-top: 1px solid #5D6576;
+text-align: center;
+left: 115px;
+opacity: .5;
+top: 140px;
+width: 82%;
+}
 .title {
     width: 100px;
+    margin: 15px 0 25px 0;
+    text-align: center;
 }
+
+.tri-div {
+    display: flex;
+    margin:0 0 20px 10px;
+    /* width: 75px; */
+    /* width: 80px; */
+}
+
+.tri-div div {
+    width: 60px;
+    text-align: right;
+}
+
+.asd .tri-div div {
+    width: 70px;
+}
+
+
+
 
 .days {
     width: 100px;
@@ -61,5 +125,15 @@ font-size: x-small;
 .sec span{
     margin-right: 5px;
 }
+
+.g1c .tri-div{
+    margin-left: -10px;
+}
+
+.g2c .tri-div{
+    margin-left: -3px;
+}
+
+
 
 
