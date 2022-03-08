@@ -23,6 +23,9 @@ body {
 .full-wrap {
     background-color: #071228;
     color: white;
+    display: grid;
+    grid-template-rows: 5% 50% 45%;
+    grid-template-columns: repeat(3, 1fr);
     
 }
 
@@ -43,6 +46,8 @@ body {
 
 #cont-bc {
     display: flex;
+    grid-row: 2 / span 3;
+    grid-column: 1 / end;
     
 }
 .cont-a {
@@ -56,7 +61,7 @@ body {
 .cont-b {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -133,6 +138,41 @@ font-size: x-small;
 .g2c .tri-div{
     margin-left: -3px;
 }
+
+.cont-c {
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.cont-c-title {
+    grid-column: 1 / span 5;  
+}
+
+.cont-c-title h2 {
+    font-size: small;
+    margin-top: 15px;
+}
+
+.cont-c-title p {
+    font-size: x-small;
+}
+
+.sideway-text1 {
+    grid-row: 2 ;
+    transform: rotateX(-90deg);
+}
+
+#cont-def{
+    grid-row: 3 / 4;
+    grid-column: 1 / span 3;
+}
+
+
+
+
 
 
 
