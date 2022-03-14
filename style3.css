@@ -227,7 +227,7 @@ font-size: x-small;
 }
 
 .squiggly-lines img {
-    width: 28vw;
+    width: 26vw;
 }
 
 /* .squiggly-lines img {
@@ -263,7 +263,8 @@ font-size: x-small;
     grid-column: 1 / span 2; 
     grid-row: 2 / span 1; 
     border-left: 9px solid #5D6576;
-    background-color: lightcoral;
+    background-color: #071228;
+   
 }
 .cont-e {
      grid-column: 2 / span 1;
@@ -302,7 +303,7 @@ font-size: x-small;
      grid-column: 3 / span 4; 
      grid-row: 2 / span 1; 
      border-right: 9px solid #5D6576;
-    background-color: lightpink;
+    background-color: #071228;
 }
 
 
