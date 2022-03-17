@@ -269,6 +269,7 @@ font-size: x-small;
 }
 
 .bar-chart {
+    position: relative;
     background-color: green;
     font-size: xx-small;
     width: 300px;
@@ -276,24 +277,45 @@ font-size: x-small;
     margin: 0 auto;
 }
 
-.cont-bars-nums {
+.bottom-line {
+    /* position: absolute; */
     position: relative;
+    background-color: orangered;
+    height: 100px;
+    width: 300px;
+    bottom: 0; 
+
 }
 
+.cont-bars-nums {
+    /* background-color: yellow; */
+    bottom: 0;
+    position: absolute;
+} 
 
+.aqua-nums2 {
+    left: 42px;
+}
+.purple-nums2 {
+    left: 42px;
+}
 
 .all-bars {
-    position: absolute;
+    
     width: 15px;
     bottom: 0;
 }
 
 .aqua-bars {
     background-color: aqua;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 .usa-aqua-bar {
-    height: 60px;
+    /* position: absolute; */
+    height: 50px;
+    /* bottom: 0; */
 }
 
 .usa-purple-num {
@@ -301,6 +323,7 @@ font-size: x-small;
 }
 
 .usa-purple-bar {
+    /* position: absolute; */
     margin-left: 17px;
     height: 30px;
     
