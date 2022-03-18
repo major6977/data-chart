@@ -79,8 +79,8 @@ body {
 #border1 {
 position: absolute;
 border-top: 1px solid #5D6576;
-left: 75px;
-width: 52%;
+left: 110px;
+width: 50%;
 top: 160px;
 opacity: .5;
 }
@@ -88,10 +88,10 @@ opacity: .5;
 position: absolute;
 border-top: 1px solid #5D6576;
 text-align: center;
-left: 75px;
+left: 110px;
 opacity: .5;
 top: 215px;
-width: 52%;
+width: 50%;
 }
 .title {
     width: 100px;
@@ -260,7 +260,6 @@ font-size: x-small;
 .bottom-line {
     display: flex;
     align-items: flex-end;
-    /* justify-content: space-around; */
     font-size: xx-small;
     height: 90px;
     width: 320px;
@@ -306,7 +305,7 @@ font-size: x-small;
 }
 
 .aqua-bars {
-    background-color: aqua;
+    background-color: #01F4FF;
     
 }
 
@@ -328,7 +327,7 @@ font-size: x-small;
 }
 
 .purple-bars {
-    background-color: purple;
+    background-color: #7709F7;
 }
 
 .cont-e {
@@ -397,7 +396,7 @@ font-size: x-small;
 .bottom-text {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     font-size: xx-small;
     width: 320px;
 }
@@ -406,14 +405,14 @@ font-size: x-small;
     width: 10px;
     height: 10px;
     margin-right: 5px;
-    background-color: aqua;
+    background-color: #01F4FF;
 }
 .color-box2 {
     width: 10px;
     height: 10px;
     margin-left: 20px;
     margin-right: 5px;
-    background-color: purple;
+    background-color: #7709F7;
 }
 
 .cont-f {
@@ -422,6 +421,26 @@ font-size: x-small;
      border-right: 9px solid #5D6576;
     background-color: #071228;
 }
+
+.bottom-line2 {
+    width: 385px;
+}
+
+.txt-under-bar-graph2 {
+    width: 385px;
+}
+
+#sessionsTriGreen {
+    display: none;
+}
+
+#sessionsTriRed {
+    display: none;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 22px; 
+}
+
 
 
 
