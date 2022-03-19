@@ -441,6 +441,19 @@ font-size: x-small;
     bottom: 22px; 
 }
 
+#todayBrTriGreen {
+    display: none;
+}
+
+#todayBrTriRed {
+    display: none;
+    transform: rotate(180deg);
+    background-color: red;
+    position: relative;
+    bottom: 22px;
+    
+}
+
 
 
 

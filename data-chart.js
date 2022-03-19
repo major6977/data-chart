@@ -1,4 +1,4 @@
-setInterval(function(){
+setInterval(function() {
     function getRandomNumbers(min, max){
          return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -17,6 +17,25 @@ setInterval(function(){
          sessionsTriRed.style.display="none";
      }
 }, 2000);
+
+            // Bounce Rate Functions
+
+ setInterval(function() {
+    function getRandomNumbers(min, max){
+        return Math.floor(Math.random() * (max - min +1)) + min;
+    }
+    let bounceRate = document.querySelector("#todayBr").innerText = getRandomNumbers(4.59, 9.10);
+        if (bounceRate < 7.99) {
+            todayBrTriRed.style.backgroundColor = "red";
+            todayBrTriRed.style.display="block";
+            todayBrTriGreen.style.display="none";
+
+        } else if(bounceRate > 7.99) {
+            todayBrTriGreen.style.backgroundColor = "green";
+            todayBrTriGreen.style.display="block";
+            todayBrTriRed.style.display="none";
+        }
+ }, 1000);    
 
 
 
