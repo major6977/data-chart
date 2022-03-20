@@ -441,18 +441,77 @@ font-size: x-small;
     bottom: 22px; 
 }
 
-#todayBrTriGreen {
-    display: none;
+#todayBr {
+    position: relative;
+    right: 11px;
 }
 
+#todayBrTriGreen {
+    position: relative;
+    display: none;
+    right: 13px;
+}
 #todayBrTriRed {
     display: none;
     transform: rotate(180deg);
     background-color: red;
     position: relative;
     bottom: 22px;
+    right: 13px;
     
 }
+
+#percentOne {
+    position: relative;
+    display: block;
+    font-size: small;
+    right: 10px;
+}
+
+#asdTriRed {
+    position: relative; 
+    display: none; 
+    background-color: red;
+    right: 4px;
+    bottom: 21px;
+    transform: rotate(180deg);
+
+}
+#asdTriGreen {
+    /* position: relative; */
+    display: none; 
+    background-color: green;
+
+}
+
+#asdTriRed2 {
+    position: relative;
+    display: none;
+    background-color: red;
+    bottom: 20px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+#asdTriGreen2 {
+    position: relative;
+    display: none;
+    background-color: green;
+}
+
+#nuTriRed {
+    position: relative;
+    display: none;
+    background-color: red;
+    bottom: 20px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+#nuTriGreen {
+    position: relative;
+    display: none;
+    background-color: green;
+}
+
 
 
 
