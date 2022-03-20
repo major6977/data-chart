@@ -500,16 +500,16 @@ font-size: x-small;
 
 #nuTriRed {
     position: relative;
-    display: none;
-    background-color: red;
+    display: none; 
+    background-color: red; 
     bottom: 20px;
     right: 5px;
     transform: rotate(180deg);
 }
 #nuTriGreen {
     position: relative;
-    display: none;
-    background-color: green;
+    display: none; 
+    background-color: green; 
 }
 
 

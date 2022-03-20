@@ -84,22 +84,23 @@ setInterval(function () {
 
 // New Users 
 
+
 setInterval(function () {
   function getRandomNumbers(min, max) { 
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  let nuTriRed = document.querySelector("#nuTriRed");
-  let nuTriGreen = document.querySelector("#nuTriGreen");
-  let nuNumbs = (document.querySelector("#nuNumbs").innerText =
-    getRandomNumbers(42,987, 60,223));
-
-  if (nuNumbs < 50,000) {
+  const nuTriRed = document.querySelector("#nuTriRed");
+  const nuTriGreen = document.querySelector("#nuTriGreen");
+  const nuNumbs = getRandomNumbers(42987, 60223);
+  const nuNumbsString = document.querySelector("#nuNumbs").innerText = nuNumbs.toLocaleString("en-US");
+  
+  if (nuNumbs < 50000) {
       nuTriRed.style.display = "block";
       nuTriGreen.style.display = "none";  
-  }
-  else if (nuNumbs > 50,000) {
+  } else {
     nuTriGreen.style.display = "block";
     nuTriRed.style.display = "none";  
- }
+  }
+ 
 }, 3500);
