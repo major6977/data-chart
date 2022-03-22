@@ -100,3 +100,33 @@ setInterval(function () {
     nuTriRed.style.display = "none";
   }
 }, 3500);
+
+// Bar Graph Motion 
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let usaAquaBarMotion = document.querySelector("#usa-aqua-bar-motion");
+    // let usaAquaNumMotion = document.querySelector("#usa-aqua-num-motion");
+    let usaNumbs = getRandomNumbers(23, 50);
+    document.querySelector("#usa-aqua-num-motion").innerText =
+      usaNumbs + 'k';
+  
+    if (usaNumbs < 30) {
+      usaAquaBarMotion.style.height = "15px";
+      usaAquaBarMotion.style.backgroundColor = "red";
+    //   nuTriGreen.style.display = "none";
+    }  else if ((usaNumbs > 30) && (usaNumbs < 40)) {
+        usaAquaBarMotion.style.height = "30px";  
+        usaAquaBarMotion.style.backgroundColor = "aqua";
+    //   nuTriRed.style.display = "none";
+    }
+      else {
+        usaAquaBarMotion.style.height = "45px";  
+        usaAquaBarMotion.style.backgroundColor = "aqua";
+    //   nuTriRed.style.display = "none";
+    }
+  }, 2500);
+  

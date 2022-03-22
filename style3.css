@@ -513,6 +513,21 @@ font-size: x-small;
 }
 
 
+/* Container D Bar Motion */
+
+/* .usa-aqua-num,  {
+    display: flex;
+    position: relative;
+    bottom: 7px;
+    right: 5px;
+} */
+
+#usa-aqua-bar-motion {
+    transition: height 2.5s;
+}
+
+
+
 
 
 
