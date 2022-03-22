@@ -52,15 +52,13 @@ setInterval(function () {
     getRandomNumbers(125, 160).toFixed(1));
 
   if (asdNumbs1 < 142) {
-      asdTriRed.style.display = "block";
-      asdTriGreen.style.display = "none";  
-  }
-  else if (asdNumbs1 > 142) {
+    asdTriRed.style.display = "block";
+    asdTriGreen.style.display = "none";
+  } else if (asdNumbs1 > 142) {
     asdTriGreen.style.display = "block";
-    asdTriRed.style.display = "none";  
- }
+    asdTriRed.style.display = "none";
+  }
 }, 2500);
-
 
 setInterval(function () {
   function getRandomNumbers(min, max) {
@@ -73,34 +71,32 @@ setInterval(function () {
     getRandomNumbers(125, 160).toFixed(1));
 
   if (asdNumbs2 < 142) {
-      asdTriRed2.style.display = "block";
-      asdTriGreen2.style.display = "none";  
-  }
-  else if (asdNumbs2 > 142) {
+    asdTriRed2.style.display = "block";
+    asdTriGreen2.style.display = "none";
+  } else if (asdNumbs2 > 142) {
     asdTriGreen2.style.display = "block";
-    asdTriRed2.style.display = "none";  
- }
+    asdTriRed2.style.display = "none";
+  }
 }, 2500);
 
-// New Users 
-
+// New Users
 
 setInterval(function () {
-  function getRandomNumbers(min, max) { 
+  function getRandomNumbers(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   const nuTriRed = document.querySelector("#nuTriRed");
   const nuTriGreen = document.querySelector("#nuTriGreen");
   const nuNumbs = getRandomNumbers(42987, 60223);
-  const nuNumbsString = document.querySelector("#nuNumbs").innerText = nuNumbs.toLocaleString("en-US");
-  
+  const nuNumbsString = (document.querySelector("#nuNumbs").innerText =
+    nuNumbs.toLocaleString("en-US"));
+
   if (nuNumbs < 50000) {
-      nuTriRed.style.display = "block";
-      nuTriGreen.style.display = "none";  
+    nuTriRed.style.display = "block";
+    nuTriGreen.style.display = "none";
   } else {
     nuTriGreen.style.display = "block";
-    nuTriRed.style.display = "none";  
+    nuTriRed.style.display = "none";
   }
- 
 }, 3500);
