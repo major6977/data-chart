@@ -2,15 +2,16 @@ setInterval(function () {
   function getRandomNumbers(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+   let sessionsNumsRandom = getRandomNumbers(2310, 2330);
   let sessionsNums = (document.querySelector("#sessionsNums").innerText =
-    getRandomNumbers(2310, 2330));
+    sessionsNumsRandom.toLocaleString("en-US"));
   //  let sessionsTriRed = document.querySelector("#sessionsTriRed");
 
-  if (sessionsNums < 2324) {
+  if (sessionsNumsRandom < 2324) {
     sessionsTriRed.style.backgroundColor = "red";
     sessionsTriRed.style.display = "block";
     sessionsTriGreen.style.display = "none";
-  } else if (sessionsNums > 2324) {
+  } else if (sessionsNumsRandom > 2324) {
     sessionsTriGreen.style.backgroundColor = "green";
     sessionsTriGreen.style.display = "block";
     sessionsTriRed.style.display = "none";
@@ -110,21 +111,16 @@ setInterval(function () {
   
     let usaAquaBarMotion = document.querySelector("#usa-aqua-bar-motion");
     // let usaAquaNumMotion = document.querySelector("#usa-aqua-num-motion");
-    let usaNumbs = getRandomNumbers(23, 50);
+    let usaNumbs = getRandomNumbers(15, 50);
     document.querySelector("#usa-aqua-num-motion").innerText =
       usaNumbs + 'k';
   
-    if (usaNumbs < 30) {
-      usaAquaBarMotion.style.height = "15px";
+    if (usaNumbs < 20) {
+      usaAquaBarMotion.style.height = usaNumbs + "px";
       usaAquaBarMotion.style.backgroundColor = "red";
     //   nuTriGreen.style.display = "none";
-    }  else if ((usaNumbs > 30) && (usaNumbs < 40)) {
-        usaAquaBarMotion.style.height = "30px";  
-        usaAquaBarMotion.style.backgroundColor = "aqua";
-    //   nuTriRed.style.display = "none";
-    }
-      else {
-        usaAquaBarMotion.style.height = "45px";  
+    }  else {
+        usaAquaBarMotion.style.height = usaNumbs + "px";  
         usaAquaBarMotion.style.backgroundColor = "aqua";
     //   nuTriRed.style.display = "none";
     }
