@@ -526,6 +526,25 @@ font-size: x-small;
     transition: height 2.5s;
 }
 
+#usa-purple-bar {
+    transition: height 3.5s;
+}
+
+.nigeria-aqua-bar {
+    height: 30px;
+    background-color: aqua;
+}
+.nigeria-purple-bar {
+    height: 20px;
+}
+.canada-aqua-bar {
+    height: 45px;
+    background-color: aqua;
+}
+.canada-purple-bar {
+    height: 37px;
+}
+
 
 
 

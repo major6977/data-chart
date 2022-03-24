@@ -102,7 +102,7 @@ setInterval(function () {
   }
 }, 3500);
 
-// Bar Graph Motion 
+// USA Aqua Graph 
 
 setInterval(function () {
     function getRandomNumbers(min, max) {
@@ -110,7 +110,6 @@ setInterval(function () {
     }
   
     let usaAquaBarMotion = document.querySelector("#usa-aqua-bar-motion");
-    // let usaAquaNumMotion = document.querySelector("#usa-aqua-num-motion");
     let usaNumbs = getRandomNumbers(15, 50);
     document.querySelector("#usa-aqua-num-motion").innerText =
       usaNumbs + 'k';
@@ -118,11 +117,114 @@ setInterval(function () {
     if (usaNumbs < 20) {
       usaAquaBarMotion.style.height = usaNumbs + "px";
       usaAquaBarMotion.style.backgroundColor = "red";
-    //   nuTriGreen.style.display = "none";
     }  else {
         usaAquaBarMotion.style.height = usaNumbs + "px";  
         usaAquaBarMotion.style.backgroundColor = "aqua";
-    //   nuTriRed.style.display = "none";
     }
   }, 2500);
+
+    // USA Purple Graph
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let usaPurpleBar = document.querySelector("#usa-purple-bar");
+    let usaNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#usa-purple-num-motion").innerText =
+      usaNumbs + '%';
+  
+    if (usaNumbs < 30) {
+      usaPurpleBar.style.height = usaNumbs + "px";
+      usaPurpleBar.style.backgroundColor = "red";
+    }  else {
+        usaPurpleBar.style.height = usaNumbs + "px";  
+        usaPurpleBar.style.backgroundColor = "#7709F7";
+    }
+  }, 3500);
+
+//   uk Aqua Graph
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let ukAquaBar = document.querySelector("#uk-aqua-bar");
+    let ukNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#uk-aqua-num-motion").innerText =
+      ukNumbs + 'k';
+  
+    if (ukNumbs < 30) {
+      ukAquaBar.style.height = ukNumbs + "px";
+      ukAquaBar.style.backgroundColor = "red";
+    }  else {
+        ukAquaBar.style.height = ukNumbs + "px";  
+        ukAquaBar.style.backgroundColor = "#01f4ff";
+    }
+  }, 3500);
+  
+//   K Purple Graph
+  
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let ukPurpleBar = document.querySelector("#uk-purple-bar");
+    let ukNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#uk-purple-num-motion").innerText =
+      ukNumbs + '%';
+  
+    if (ukNumbs < 30) {
+      ukPurpleBar.style.height = ukNumbs + "px";
+      ukPurpleBar.style.backgroundColor = "red";
+    }  else {
+        ukPurpleBar.style.height = ukNumbs + "px";  
+        ukPurpleBar.style.backgroundColor = "#7709F7";
+    }
+  }, 3500);
+  
+//   Brasil Aqua Graph
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let brasilAquaBar = document.querySelector("#brasil-aqua-bar");
+    let brasilNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#brasil-aqua-num-motion").innerText =
+      brasilNumbs + 'k';
+  
+    if (brasilNumbs < 30) {
+      brasilAquaBar.style.height = brasilNumbs + "px";
+      brasilBar.style.backgroundColor = "red";
+    }  else {
+        brasilAquaBar.style.height = brasilNumbs + "px";  
+        brasilAquaBar.style.backgroundColor = "#01f4ff";
+    }
+  }, 4500);
+  
+//   Brasil Purple Graph
+  
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let brasilPurpleBar = document.querySelector("#brasil-purple-bar");
+    let brasilNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#brasil-purple-num-motion").innerText =
+      brasilNumbs + '%';
+  
+    if (brasilNumbs < 30) {
+      brasilPurpleBar.style.height = brasilNumbs + "px";
+      brasilPurpleBar.style.backgroundColor = "red";
+    }  else {
+        brasilPurpleBar.style.height = brasilNumbs + "px";  
+        brasilPurpleBar.style.backgroundColor = "#7709F7";
+    }
+  }, 4000);
   
