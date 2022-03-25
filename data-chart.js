@@ -200,7 +200,7 @@ setInterval(function () {
   
     if (brasilNumbs < 30) {
       brasilAquaBar.style.height = brasilNumbs + "px";
-      brasilBar.style.backgroundColor = "red";
+      brasilAquaBar.style.backgroundColor = "red";
     }  else {
         brasilAquaBar.style.height = brasilNumbs + "px";  
         brasilAquaBar.style.backgroundColor = "#01f4ff";
@@ -227,4 +227,69 @@ setInterval(function () {
         brasilPurpleBar.style.backgroundColor = "#7709F7";
     }
   }, 4000);
+
+//   Sessions And Bounce Rate Function For Aqua Organic Search
+
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
   
+    let organicAquaBars = document.querySelector("#organic-aqua-bars");
+    let organicNumbs = getRandomNumbers(15, 35);
+    document.querySelector("#organic-aqua-num-motion").innerText =
+      organicNumbs + 'k';
+  
+    if (organicNumbs < 20) {
+      organicAquaBars.style.height = organicAquaBars + "px";
+      organicAquaBars.style.backgroundColor = "red";
+    }  else {
+        organicAquaBars.style.height = organicNumbs + "px";  
+        organicAquaBars.style.backgroundColor = "#01f4ff";
+    }
+  }, 3500);
+
+//   Sessions & Bounce Rate for Pain Search Purple Bar
+
+
+  setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let paidPurpleBar = document.querySelector("#paid-purple-bar-motion");
+    let paidNumbs = getRandomNumbers(20, 45);
+    document.querySelector("#paid-purple-num-motion").innerText =
+      paidNumbs + '%';
+  
+    if (paidNumbs < 30) {
+      paidPurpleBar.style.height = paidNumbs + "px";
+      paidPurpleBar.style.backgroundColor = "red";
+    }  else {
+        paidPurpleBar.style.height = paidNumbs + "px";  
+        paidPurpleBar.style.backgroundColor = "#7709F7";
+    }
+  }, 4000);
+
+
+//   Referal Aqua Bar
+
+  setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    let referalAquaBar = document.querySelector("#referal-aqua-bar-motion");
+    let aquaBarNum = getRandomNumbers(20, 45);
+    document.querySelector("#referal-aqua-num-motion").innerText =
+      aquaBarNum + '%';
+  
+    if (aquaBarNum < 30) {
+      referalAquaBar.style.height = aquaBarNum + "px";
+      referalAquaBar.style.backgroundColor = "red";
+    }  else {
+        referalAquaBar.style.height = aquaBarNum + "px";  
+        referalAquaBar.style.backgroundColor = "#01f4ff";
+    }
+  }, 3500);

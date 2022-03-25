@@ -545,7 +545,52 @@ font-size: x-small;
     height: 37px;
 }
 
+/* Sessions & Bounce Rate Bars */
 
+
+#organic-aqua-bars {
+    
+    height: 30px;
+    background-color: aqua;
+}
+
+#paid-purple-bar-motion {
+    transition: height 3.5s;
+}
+
+#referal-aqua-bar-motion {
+    transition: height 4.5s;
+}
+
+.direct-aqua-bar {
+    background-color: #01F4FF;
+    height: 30px;
+}
+
+.direct-purple-bar {
+    background-color: #7709F7;
+    height: 45px;
+}
+
+.social-aqua-bar {
+    background-color: #01F4FF;
+    height: 45px;
+}
+
+.social-purple-bar {
+    background-color: #7709F7;
+    height: 55px;
+}
+
+.email-aqua-bar {
+    background-color: #01F4FF;
+    height: 35px;
+}
+
+.email-purple-bar {
+    background-color: #7709F7;
+    height: 20px;
+}
 
 
 
