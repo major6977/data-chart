@@ -3,6 +3,8 @@ setInterval(function () {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
    let sessionsNumsRandom = getRandomNumbers(2310, 2330);
+   let sessionsTriRed = document.querySelector("#sessionsTriRed");
+   let sessionsTriGreen = document.querySelector("#sessionsTriGreen");
   let sessionsNums = (document.querySelector("#sessionsNums").innerText =
     sessionsNumsRandom.toLocaleString("en-US"));
   //  let sessionsTriRed = document.querySelector("#sessionsTriRed");
@@ -10,11 +12,11 @@ setInterval(function () {
   if (sessionsNumsRandom < 2324) {
     sessionsTriRed.style.backgroundColor = "red";
     sessionsTriRed.style.display = "block";
-    sessionsTriGreen.style.display = "none";
+     sessionsTriGreen.style.display = "none";
   } else if (sessionsNumsRandom > 2324) {
     sessionsTriGreen.style.backgroundColor = "green";
     sessionsTriGreen.style.display = "block";
-    sessionsTriRed.style.display = "none";
+     sessionsTriRed.style.display = "none";
   }
 }, 2000);
 
