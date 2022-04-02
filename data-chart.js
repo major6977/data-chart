@@ -30,7 +30,7 @@ setInterval(function () {
   let todayBrTriRed = document.querySelector("#todayBrTriRed");
   let todayBrTriGreen = document.querySelector("#todayBrTriGreen");
   let bounceRate = (document.querySelector("#todayBr").innerText =
-    getRandomNumbers(4, 10).toFixed(2));
+    getRandomNumbers(4, 10).toFixed(2) + '%');
   if (bounceRate < 7) {
     todayBrTriRed.style.backgroundColor = "red";
     todayBrTriRed.style.display = "block";
