@@ -20,6 +20,33 @@ setInterval(function () {
   }
 }, 2000);
 
+// This Is The Mobile
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+     let sessionsNumsRandom = getRandomNumbers(2310, 2330);
+     let sessionsTriRed = document.querySelector("#red-tri-sess-mobile");
+     let sessionsTriGreen = document.querySelector("#grn-tri-sess-mobile");
+     (document.querySelector("#sessions-numbs-mobile").innerText =
+      sessionsNumsRandom.toLocaleString("en-US"));
+    //  let sessionsTriRed = document.querySelector("#sessionsTriRed");
+  
+    if (sessionsNumsRandom < 2324) {
+      sessionsTriRed.style.backgroundColor = "red";
+      sessionsTriRed.style.display = "block";
+      sessionsTriRed.style.transform = "rotate(180deg)"
+      document.querySelector("#red-tri-sess-mobile").style.marginTop = "-16px";
+      sessionsTriGreen.style.display = "none";
+
+    } else if (sessionsNumsRandom > 2324) {
+      sessionsTriGreen.style.backgroundColor = "green";
+      sessionsTriGreen.style.display = "block";
+       sessionsTriRed.style.display = "none";
+    }
+  }, 2000);
+
 
 
 
@@ -44,6 +71,31 @@ setInterval(function () {
     nuTriRed.style.display = "none";
   }
 }, 3500);
+
+// New Users Mobile
+
+setInterval(function () {
+    function getRandomNumbers(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  
+    const nuTriRed = document.querySelector("#red-tri-nu-mobile");
+    const nuTriGreen = document.querySelector("#grn-tri-nu-mobile");
+    const nuNumbs = getRandomNumbers(42987, 60223);
+    const nuNumbsString = (document.querySelector("#nu-numbs-mobile").innerText =
+      nuNumbs.toLocaleString("en-US"));
+  
+    if (nuNumbs < 50000) {
+      nuTriRed.style.display = "block";
+      nuTriRed.style.transform = "rotate(180deg)";
+      nuTriRed.style.backgroundColor = "red";
+      document.querySelector("#red-tri-nu-mobile").style.marginTop = "-16px";
+      nuTriGreen.style.display = "none";
+    } else {
+      nuTriGreen.style.display = "block";
+      nuTriRed.style.display = "none";
+    }
+  }, 3500);
 
 // Bounce Rate Functions
 
