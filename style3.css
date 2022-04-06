@@ -728,6 +728,8 @@ font-size: x-small;
          grid-row: 3 / span 1;
      }
 
+     /* Bounce Rate */
+
      .br-title {
          grid-column: 1 / span 1;
          grid-row: 4 / span 1;
@@ -765,6 +767,8 @@ font-size: x-small;
 
      .title {
          margin-top: 0;
+
+         /* Average Session Duration */
      }
      .asd-title {
          grid-row: 5 / span 1;

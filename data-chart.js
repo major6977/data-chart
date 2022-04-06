@@ -104,10 +104,10 @@ setInterval(function () {
       return Math.random() * (max - min + 1) + min;
     }
   
-    let todayBrTriRed = document.querySelector("#todayBrTriRed");
-    let todayBrTriGreen = document.querySelector("#todayBrTriGreen");
+    let todayBrTriRed = document.querySelector("#red-tri-br-mobile");
+    let todayBrTriGreen = document.querySelector("#grn-tri-br-mobile");
     let BrRandomNumbers = getRandomNumbers(4, 10);
-    (document.querySelector("#todayBr").innerText =
+    (document.querySelector("#br-numbs-mobile").innerText =
       BrRandomNumbers.toFixed(2) + '%');
     if (BrRandomNumbers < 7) {
       todayBrTriRed.style.backgroundColor = "red";
@@ -123,47 +123,73 @@ setInterval(function () {
 
   // Movement Functions for ASD Numbers
 
-setInterval(function () {
-    function getRandomNumbers(min, max) {
-      return Math.random() * (max - min + 1) + min;
-    }
+
+//   setInterval(function () {
+//     function getRandomNumbers(min, max) {
+//       return Math.floor(Math.random() * (max - min + 1)) + min;
+//     }
   
-    let asdTriRed = document.querySelector("#asdTriRed");
-    let asdTriGreen = document.querySelector("#asdTriGreen");
-    let asdRandomNumb = getRandomNumbers(125, 160);
-    (document.querySelector("#asdNumbs1").innerText =
-    asdRandomNumb.toFixed(1));
+//     const nuTriRed = document.querySelector("#red-tri-asd-mobile");
+//     const nuTriGreen = document.querySelector("#grn-tri-asd-mobile");
+//     const nuNumbs = getRandomNumbers(125, 160);
+//     const nuNumbsString = (document.querySelector("#asd-numbs-mobile").innerText =
+//       nuNumbs.toLocaleString("en-US"));
   
-    if (asdRandomNumb < 142) {
-      asdTriRed.style.display = "block";
-      asdTriGreen.style.display = "none";
-    } else if (asdRandomNumb > 142) {
-      asdTriGreen.style.display = "block";
-      asdTriRed.style.display = "none";
-    }
-  }, 2500);
+//     if (nuNumbs < 142) {
+//       nuTriRed.style.display = "block";
+//       asdTriRed.style.transform = "rotate(180deg)";
+//       asdTriRed.style.backgroundColor = "red";
+//       document.querySelector("#red-tri-asd-mobile").style.marginTop = "-16px";
+//       asdTriGreen.style.display = "none";
+//     } else {
+//       asdTriGreen.style.display = "block";
+//       asdTriRed.style.display = "none";
+//     }
+//   }, 2500);
+
+
+
+ setInterval(function () {
+     function getRandomNumbers(min, max) {
+       return Math.random() * (max - min + 1) + min;
+     }
   
-  setInterval(function () {
-    function getRandomNumbers(min, max) {
-      return Math.random() * (max - min + 1) + min;
-    }
+     let asdTriRed = document.querySelector("#red-tri-asd-mobile");
+     let asdTriGreen = document.querySelector("#grn-tri-asd-mobile");
+     let asdRandomNumb = getRandomNumbers(125, 160);
+     (document.querySelector("#asd-numbs-mobile").innerText =
+     asdRandomNumb.toFixed(1));
   
-    let asdTriRed2 = document.querySelector("#asdTriRed2");
-    let asdTriGreen2 = document.querySelector("#asdTriGreen2");
-    let asdRandomNumb2 = getRandomNumbers(125, 160);
-    let asdNumbs2 = document.querySelector("#asdNumbs2").innerText =
-      asdRandomNumb2.toFixed(1);
-      console.log(asdNumbs2);
-      console.log(asdRandomNumb2);
+     if (asdRandomNumb < 142) {
+       asdTriRed.style.display = "block";
+       asdTriGreen.style.display = "none";
+     } else if (asdRandomNumb > 142) {
+       asdTriGreen.style.display = "block";
+       asdTriRed.style.display = "none";
+     }
+   }, 2500);
   
-    if (asdRandomNumb2 < 142) {
-      asdTriRed2.style.display = "block";
-      asdTriGreen2.style.display = "none";
-    } else if (asdRandomNumb2 > 142) {
-      asdTriGreen2.style.display = "block";
-      asdTriRed2.style.display = "none";
-    }
-  }, 2500);
+   setInterval(function () {
+     function getRandomNumbers(min, max) {
+       return Math.random() * (max - min + 1) + min;
+     }
+  
+     let asdTriRed2 = document.querySelector("#asdTriRed2");
+     let asdTriGreen2 = document.querySelector("#asdTriGreen2");
+     let asdRandomNumb2 = getRandomNumbers(125, 160);
+     let asdNumbs2 = document.querySelector("#asdNumbs2").innerText =
+       asdRandomNumb2.toFixed(1);
+       console.log(asdNumbs2);
+       console.log(asdRandomNumb2);
+  
+     if (asdRandomNumb2 < 142) {
+       asdTriRed2.style.display = "block";
+       asdTriGreen2.style.display = "none";
+     } else if (asdRandomNumb2 > 142) {
+       asdTriGreen2.style.display = "block";
+       asdTriRed2.style.display = "none";
+     }
+   }, 2500);
   
 
 // USA Aqua Graph 
