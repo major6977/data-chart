@@ -23,7 +23,7 @@ body {
     background-color: #071228;
     color: white;
     width: 98vw; 
-    /* max-width: 1350px; */
+     max-width: 2100px; 
     margin: 20vh auto;
     position: relative;
     
@@ -304,6 +304,7 @@ font-size: x-small;
 #buttons img {
     display: inline-block;
     padding-left: 30px;
+    margin: 0 auto;
 }
 .map-title h2 {
     font-size: small;
@@ -497,6 +498,7 @@ font-size: x-small;
     background-color: #7709F7;
     height: 20px;
 }
+
 /* Mobile Styles */
 
 
@@ -507,6 +509,24 @@ font-size: x-small;
 #cont-bc {
     display: block;  
 }
+
+#border1 {
+    position: absolute;
+    border-top: 1px solid #5D6576;
+    left: 170px;
+    width: 80%;
+    top: 160px;
+    opacity: .5;
+    }
+    #border2 {
+    position: absolute;
+    border-top: 1px solid #5D6576;
+    text-align: center;
+    left: 170px;
+    opacity: .5;
+    top: 215px;
+    width: 80%;
+    }
 .squiggly-lines img {
     width: 50vw;
 }
@@ -532,6 +552,11 @@ font-size: x-small;
 .cont-d {
     border-right: 9px solid #5D6576 ;
 }
+
+.cont-e {
+    border-top: 9px solid #5D6576;
+    border-bottom: 9px solid #5D6576;
+}
 .cont-f {
     border-left: 9px solid #5D6576;
 }
@@ -544,7 +569,15 @@ font-size: x-small;
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
+
+    .mobile-numbers div {
+        font-size: x-small;
+    }
+
+    .cont-a h2 {
+        font-size: 3vw;
+    }
     .small-text {
         text-align: right;
         padding-top: 10px;
@@ -563,6 +596,14 @@ font-size: x-small;
         display: none;
     }
 
+    #red-tri-br-mobile {
+        display: none;
+    }
+
+    #red-tri-asd-mobile {
+        display: none;
+    }
+
     .cont-b-none {
         display: none;
     }
@@ -573,7 +614,7 @@ font-size: x-small;
 
     .cont-b-mobile {
         display: grid;
-        grid-template-columns: repeat(7, auto);
+        grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(7, 1fr);
         border-bottom: 9px solid #5D6576;
         border-left: 9px solid #5D6576;
