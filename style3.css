@@ -220,6 +220,7 @@ font-size: x-small;
     border-bottom: 2px solid white;
 }
 .cont-bars-nums {
+    position: relative;
     display: flex;
     align-items: flex-end;
     
