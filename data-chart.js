@@ -1,9 +1,30 @@
-// function addHours(numOfHours, date = new Date()) {
-//   date.setTime(date.getTime() + numOfHours * 60 * 60 * 1000);
-//   return date;
-// }
+// Date & Time Function
 
-// document.getElementById("date-time").innerText = addHours;
+function display_dateTime() {
+  var x = new Date();
+  var ampm = x.getHours() >= 12 ? " PM" : " AM";
+  var x1 = x.getMonth() + 1 + "/" + x.getDate() + "/" + x.getFullYear();
+  x1 =
+    x1 +
+    " " +
+    (x.getHours() % 12) +
+    ":" +
+    x.getMinutes() +
+    ":" +
+    x.getSeconds() +
+    " " +
+    ampm +
+    " MST";
+  document.getElementById("date-time").innerHTML = x1;
+  display_information();
+}
+function display_information() {
+  var refresh = 1000;
+  mytime = setTimeout("display_dateTime()", refresh);
+}
+display_information();
+
+// New Funtion Sessions
 
 setInterval(function () {
   function getRandomNumbers(min, max) {
