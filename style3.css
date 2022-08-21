@@ -486,6 +486,7 @@ a {
 #cont-b-mobile {
   display: none;
 }
+
 @media (max-width: 1250px) {
   #cont-bc {
     display: block;
@@ -545,6 +546,45 @@ a {
 }
 .cont-b-mobile {
   display: none;
+}
+
+@media (max-width: 1245px) {
+  .txt-under-bar-graph {
+    width: 85vw !important;
+    justify-content: space-evenly;
+  }
+  .bottom-line {
+    justify-content: space-evenly !important;
+    width: 85vw !important;
+  }
+  .cont-bars-nums {
+    margin-left: 0 !important;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-bars-num3 {
+    /* margin-left: 5px !i; */
+  }
+
+  #buttons {
+    margin-left: 0;
+  }
+
+  #buttons img {
+    padding-left: 0;
+    height: 20vh;
+  }
+
+  #buttons div button {
+    position: relative;
+    left: 30vw;
+  }
+
+  .country-names {
+    width: 100px;
+  }
 }
 
 /* Cell Phone Size Mobile */
